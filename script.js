@@ -16,6 +16,4 @@ const stringChecker = function(s, p1, p2) {
   return subStr1 === p1.length && subStr2 === p2.length 
 }
 
-const result = stringChecker('radency', 'rdnc', 'aey')
-
-console.log(result)
+console.log(stringChecker('radency', 'rdnc', 'aey'))
