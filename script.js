@@ -18,3 +18,33 @@ const stringChecker = function(s, p1, p2) {
 };
 
 console.log(stringChecker('radency', 'rdnc', 'aey'));
+
+console.log(
+  'має повернути false для порожніх вхідних даних',
+  stringChecker('radency', '', '')
+)
+
+console.log(
+  'має повернути false якщо використано не всі літери',
+  stringChecker('radency', 'rdnc', 'aeyt')
+)
+
+console.log(
+  'має повернути false якщо не вистачило літер щоб зібрати слово',
+  stringChecker('radency', 'rdn', 'aey')
+)
+
+console.log(
+  'має повернути false якщо неправильний порядок',
+  stringChecker('radency', 'rncd', 'aey')
+)
+
+console.log(
+  'цікавий сценарій, expect true: ',
+  stringChecker('monitor', 'mor', 'onit')
+)
+
+console.log(
+  'цікавий сценарій 2, expect true: ',
+  stringChecker('monitor', 'monit', 'or')
+)
